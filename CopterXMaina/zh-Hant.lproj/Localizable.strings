@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  CopterXMaina
+
+  Created by Prashanth Moorthy on 7/9/15.
+  Copyright (c) 2015 The App Mentor. All rights reserved.
+*/
+
+Score = "路程";
+Best_Score = "最好的東西";
+Restart_Game = "重新開始";
+Gold_Coins = "金幣";
+Buy = "購買";
+Rem_Ads = "移除廣告";
+music_on = "播放音樂";
+Play = "玩";
+contacting_AppStore = "聯繫市場";
+Store = "市場";
+Tap_To_Begin = "點擊開始";
+Oops_Try_Again = "錯誤！請再試一次";
+Continue_Game = "是否繼續？";
+Game_Over = "遊戲結束";
+500_Gold_Coins = "500金幣";
+2000_Gold_Coins = "2000金幣";
+Gold_Coins = "金幣";
+Settings = "設置";
+Speeding_Up = "提速";
+Loading = "處理";

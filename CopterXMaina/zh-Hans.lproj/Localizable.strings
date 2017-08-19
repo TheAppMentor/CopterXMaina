@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  CopterXMaina
+
+  Created by Prashanth Moorthy on 7/9/15.
+  Copyright (c) 2015 The App Mentor. All rights reserved.
+*/
+
+Score = "远方";
+Best_Score = "最好";
+Restart_Game = "重新开始";
+Gold_Coins = "金币";
+Buy = "购买";
+Rem_Ads = "移除广告";
+music_on = "播放音乐";
+Play = "玩";
+contacting_AppStore = "联系市场";
+Store = "市场";
+Tap_To_Begin = "点击开始";
+Oops_Try_Again = "错误！请再试一次";
+Continue_Game = "延续";
+Game_Over = "游戏结束";
+500_Gold_Coins = "500金币";
+2000_Gold_Coins = "2000金币";
+Gold_Coins = "金币";
+Settings = "设置";
+Speeding_Up = "提速";
+Loading = "处理";

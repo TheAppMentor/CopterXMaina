@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  CopterXMaina
+
+  Created by Prashanth Moorthy on 7/9/15.
+  Copyright (c) 2015 The App Mentor. All rights reserved.
+*/
+
+
+Score = "Ergebnis";
+Best_Score = "Beste";
+Restart_Game = "wieder starten";
+Gold_Coins = "Münzen";
+Buy = "Kauf";
+Rem_Ads = "Entfernen Werbung";
+music_on = "Play Game Musik";
+Play = "Spielen";
+contacting_AppStore = "Kontaktieren Markt";
+Store = "Markt";
+Tap_To_Begin = "Tippen Sie auf Bildschirm zum Start";
+Oops_Try_Again = "Error! Bitte Versuche Es Erneut";
+Continue_Game = "Fortsetzen ?";
+Game_Over = "Spiel Vorbei";
+Settings = "Einstellungen";
+Loading = "Verarbeitung";
+Speeding_Up = "die Beschleunigung";
+

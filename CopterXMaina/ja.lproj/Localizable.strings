@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  CopterXMaina
+
+  Created by Prashanth Moorthy on 7/9/15.
+  Copyright (c) 2015 The App Mentor. All rights reserved.
+*/
+
+Score = "スコア";
+Best_Score = "最高スコア";
+Restart_Game = "再発足";
+Gold_Coins = "ゴールドコイン";
+Buy = "購入";
+Rem_Ads = "広告を削除";
+music_on = "ゲーム音楽を再生";
+Play = "遊びます";
+contacting_AppStore = "接触させる店";
+Store = "市場";
+Tap_To_Begin = "開始するには、画面をタップ";
+Oops_Try_Again = "エラー！再度お試しください。";
+Continue_Game = "通す";
+Game_Over = "ゲーム終了";
+500_Gold_Coins = "500ゴールドコイン！";
+2000_Gold_Coins = "2000ゴールドコイン！";
+Gold_Coins = "ゴールドコイン！";
+Settings = "[設定]";
+Loading = "処理";
+Speeding_Up = "上昇速度";

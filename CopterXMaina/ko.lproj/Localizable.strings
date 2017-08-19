@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  CopterXMaina
+
+  Created by Prashanth Moorthy on 7/9/15.
+  Copyright (c) 2015 The App Mentor. All rights reserved.
+*/
+
+Score = "점수";
+Best_Score = "베스트";
+Restart_Game = "다시 플레이";
+Gold_Coins = "금화";
+Buy = "매수";
+Rem_Ads = "광고를 제거";
+music_on = "게임 음악 재생";
+Play = "놀이";
+contacting_AppStore = "문의 시장";
+Store = "시장";
+Tap_To_Begin = "비행 시작 탭";
+Oops_Try_Again = "오류 ! 다시 시도하십시오.";
+Continue_Game = "계속하다 ?";
+Game_Over = "게임 끝";
+500_Gold_Coins = "500 Gold Coins!";
+2000_Gold_Coins = "2000 Gold Coins !";
+Settings = "설정";
+Loading = "처리";
+Speeding_Up = "가속화";
