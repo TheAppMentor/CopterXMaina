@@ -99,6 +99,7 @@
     playLabel.fontSize = [[TexturePreLoader sharedTexturePreLoader] largeFontSize];
     playLabel.fontColor = [UIColor blackColor];
     playLabel.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
+    playLabel.name = @"playLabel";
 //    playLabel.text = @"PLAY";
     playLabel.text = [NSString stringWithFormat:NSLocalizedString(@"Play", nil)];
     playLabel.position = CGPointMake(CGRectGetMidX(playButton.frame),CGRectGetMidY(playButton.frame));
@@ -197,6 +198,9 @@
         if ([touchedNode.name isEqualToString:@"playButton"]) {
             NSLog(@"Playbutton was Pressed");
             [self transitionToGame];
+        }else if([touchedNode.name isEqualToString:@"playLabel"]){
+            NSLog(@"Playbutton was Pressed");
+            [self transitionToGame];
         }else if([touchedNode.name isEqualToString:@"storeButton"]){
             NSLog(@"storeButton was Pressed");
             [self transitionToStore];
@@ -220,8 +224,8 @@
             
             FBSDKShareLinkContent *content = [[FBSDKShareLinkContent alloc] init];
             content.contentURL = [NSURL URLWithString:@"https://itunes.apple.com/us/app/copter-mania-free-fun-classic/id979059687?mt=8"];
-            content.contentTitle = @"Copter Mania";
-            content.contentDescription = @"Try out Copter Mania. Its a fun new iOS Game.";
+//            content.contentTitle = @"Copter Mania";
+//            content.contentDescription = @"Try out Copter Mania. Its a fun new iOS Game.";
             [FBSDKShareDialog showFromViewController:self.view.window.rootViewController
                                          withContent:content
                                             delegate:nil];
@@ -232,7 +236,8 @@
 
 
 -(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+    /* Called before 
+     each frame is rendered */
 }
 
 -(void)transitionToStore{

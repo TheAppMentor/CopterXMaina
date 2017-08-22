@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253D7FAA9C4EE06EE7F9DB71 /* libPods-CopterXMainaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D972CACC0C92DFD3BCC9746 /* libPods-CopterXMainaTests.a */; };
+		2FE1CBC61F49EE680041CAB7 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2FE1CBC51F49EE680041CAB7 /* Podfile */; };
 		880688BC1B2D71A500A2AD34 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880688B91B2D71A500A2AD34 /* FBSDKCoreKit.framework */; };
 		880688BD1B2D71A500A2AD34 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880688BA1B2D71A500A2AD34 /* FBSDKLoginKit.framework */; };
 		880688BE1B2D71A500A2AD34 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 880688BB1B2D71A500A2AD34 /* FBSDKShareKit.framework */; };
@@ -20,8 +22,6 @@
 		8819C1131ABDECD6009642CC /* Copter_Images_2x.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8819C1101ABDECD6009642CC /* Copter_Images_2x.atlas */; };
 		8819C1141ABDECD6009642CC /* Copter_Images_3x.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 8819C1111ABDECD6009642CC /* Copter_Images_3x.atlas */; };
 		881DBA981B4E7D6B00DF5191 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 881DBA9A1B4E7D6B00DF5191 /* Localizable.strings */; };
-		8829ACCF1B16E6F5002443FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8829ACCE1B16E6F5002443FF /* Bolts.framework */; };
-		8829ACD11B16E701002443FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8829ACD01B16E700002443FF /* Parse.framework */; };
 		8829ACD31B16E7B7002443FF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8829ACD21B16E7B7002443FF /* AudioToolbox.framework */; };
 		8829ACD51B16E7BD002443FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8829ACD41B16E7BD002443FF /* CFNetwork.framework */; };
 		8829ACD71B16E7D8002443FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8829ACD61B16E7D8002443FF /* CoreGraphics.framework */; };
@@ -66,6 +66,7 @@
 		88D9797D1ABEB627002D1BCF /* Environment_3x.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 88D9797B1ABEB627002D1BCF /* Environment_3x.atlas */; };
 		88EF66A41B53631900AE331E /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88EF66A31B53631900AE331E /* Chartboost.framework */; };
 		88F4A59C1B1616C700C42295 /* GameCenterHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F4A59B1B1616C700C42295 /* GameCenterHelper.m */; };
+		CE845F0EBC2E5833905911D9 /* libPods-CopterXMaina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1E916B2A364261E48894C3 /* libPods-CopterXMaina.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BDB53233691E56EBF9E1C58 /* Pods-CopterXMainaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopterXMainaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CopterXMainaTests/Pods-CopterXMainaTests.release.xcconfig"; sourceTree = "<group>"; };
+		1F1E916B2A364261E48894C3 /* libPods-CopterXMaina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CopterXMaina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F81BDF52C1E1F35E180B710 /* Pods-CopterXMainaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopterXMainaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopterXMainaTests/Pods-CopterXMainaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2FE1CBC51F49EE680041CAB7 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3ED99C619E02A76A3968700C /* Pods-CopterXMaina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopterXMaina.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CopterXMaina/Pods-CopterXMaina.debug.xcconfig"; sourceTree = "<group>"; };
+		4279643AD6CBAB268B599AF9 /* Pods-CopterXMaina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CopterXMaina.release.xcconfig"; path = "Pods/Target Support Files/Pods-CopterXMaina/Pods-CopterXMaina.release.xcconfig"; sourceTree = "<group>"; };
+		5D972CACC0C92DFD3BCC9746 /* libPods-CopterXMainaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CopterXMainaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		880688B91B2D71A500A2AD34 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = ../../FacebookSDK/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		880688BA1B2D71A500A2AD34 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../../FacebookSDK/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		880688BB1B2D71A500A2AD34 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../../FacebookSDK/FBSDKShareKit.framework; sourceTree = "<group>"; };
@@ -208,8 +216,7 @@
 				8829ACD31B16E7B7002443FF /* AudioToolbox.framework in Frameworks */,
 				8819C1071ABD851F009642CC /* iAd.framework in Frameworks */,
 				8819C1051ABD7521009642CC /* GameKit.framework in Frameworks */,
-				8829ACCF1B16E6F5002443FF /* Bolts.framework in Frameworks */,
-				8829ACD11B16E701002443FF /* Parse.framework in Frameworks */,
+				CE845F0EBC2E5833905911D9 /* libPods-CopterXMaina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,12 +224,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253D7FAA9C4EE06EE7F9DB71 /* libPods-CopterXMainaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8014196E9EEA562E6C659773 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3ED99C619E02A76A3968700C /* Pods-CopterXMaina.debug.xcconfig */,
+				4279643AD6CBAB268B599AF9 /* Pods-CopterXMaina.release.xcconfig */,
+				1F81BDF52C1E1F35E180B710 /* Pods-CopterXMainaTests.debug.xcconfig */,
+				1BDB53233691E56EBF9E1C58 /* Pods-CopterXMainaTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		881A75931AB174690036F9B9 /* Audio FIles */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +278,8 @@
 				8819C1061ABD851F009642CC /* iAd.framework */,
 				8819C1041ABD7521009642CC /* GameKit.framework */,
 				8819C1021ABD4FDD009642CC /* AVKit.framework */,
+				1F1E916B2A364261E48894C3 /* libPods-CopterXMaina.a */,
+				5D972CACC0C92DFD3BCC9746 /* libPods-CopterXMainaTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,11 +287,13 @@
 		88C0A8551AAF12F800F8A233 = {
 			isa = PBXGroup;
 			children = (
+				2FE1CBC51F49EE680041CAB7 /* Podfile */,
 				8872C32A1B2DF36E00B7C163 /* Default-568h@2x.png */,
 				887F9F2C1B2B302500D74E41 /* Frameworks */,
 				88C0A8601AAF12F800F8A233 /* CopterXMaina */,
 				88C0A87F1AAF12F900F8A233 /* CopterXMainaTests */,
 				88C0A85F1AAF12F800F8A233 /* Products */,
+				8014196E9EEA562E6C659773 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -447,9 +470,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88C0A8861AAF12F900F8A233 /* Build configuration list for PBXNativeTarget "CopterXMaina" */;
 			buildPhases = (
+				8908D0265AAAEA199AE0815E /* [CP] Check Pods Manifest.lock */,
 				88C0A85A1AAF12F800F8A233 /* Sources */,
 				88C0A85B1AAF12F800F8A233 /* Frameworks */,
 				88C0A85C1AAF12F800F8A233 /* Resources */,
+				352F21984B3F2362ECE9DE42 /* [CP] Embed Pods Frameworks */,
+				769116EE38E9E2AE55B7B362 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -464,9 +490,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88C0A8891AAF12F900F8A233 /* Build configuration list for PBXNativeTarget "CopterXMainaTests" */;
 			buildPhases = (
+				B9E721C372C8F61F58E19B6B /* [CP] Check Pods Manifest.lock */,
 				88C0A8781AAF12F900F8A233 /* Sources */,
 				88C0A8791AAF12F900F8A233 /* Frameworks */,
 				88C0A87A1AAF12F900F8A233 /* Resources */,
+				8734C5AF56CB2E06DF5795E1 /* [CP] Embed Pods Frameworks */,
+				0821291AD131E335FB3C6E3E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -490,6 +519,7 @@
 					88C0A85D1AAF12F800F8A233 = {
 						CreatedOnToolsVersion = 6.1.1;
 						DevelopmentTeam = TLV25NDMDF;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 1;
@@ -542,6 +572,7 @@
 				88110C3C1B1EFBD30012091D /* NewHighScore.wav in Resources */,
 				88C0A86C1AAF12F800F8A233 /* GameScene.sks in Resources */,
 				88480F1C1AC104E500AC9AEF /* crash.mp3 in Resources */,
+				2FE1CBC61F49EE680041CAB7 /* Podfile in Resources */,
 				88D9797D1ABEB627002D1BCF /* Environment_3x.atlas in Resources */,
 				8872C32B1B2DF36E00B7C163 /* Default-568h@2x.png in Resources */,
 				8819C1121ABDECD6009642CC /* Copter_Images_1x.atlas in Resources */,
@@ -562,6 +593,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0821291AD131E335FB3C6E3E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopterXMainaTests/Pods-CopterXMainaTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		352F21984B3F2362ECE9DE42 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopterXMaina/Pods-CopterXMaina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		769116EE38E9E2AE55B7B362 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopterXMaina/Pods-CopterXMaina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8734C5AF56CB2E06DF5795E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CopterXMainaTests/Pods-CopterXMainaTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8908D0265AAAEA199AE0815E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9E721C372C8F61F58E19B6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		88C0A85A1AAF12F800F8A233 /* Sources */ = {
@@ -690,7 +814,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -725,7 +849,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -734,50 +858,57 @@
 		};
 		88C0A8871AAF12F900F8A233 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ED99C619E02A76A3968700C /* Pods-CopterXMaina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prashanth Moorthy (SJUWDU58SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TLV25NDMDF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CopterXMaina",
 					"$(PROJECT_DIR)",
-					/Users/Prashanth/Documents/FacebookSDK,
+					"/Users/i328244/Documents/FacebookSDKs-iOS-4.25.0",
 				);
 				INFOPLIST_FILE = CopterXMaina/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1e970432-0b3c-47cf-81a9-f044fc63500f";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		88C0A8881AAF12F900F8A233 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4279643AD6CBAB268B599AF9 /* Pods-CopterXMaina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Prashanth Moorthy (SJUWDU58SA)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = TLV25NDMDF;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CopterXMaina",
 					"$(PROJECT_DIR)",
-					/Users/Prashanth/Documents/FacebookSDK,
+					"/Users/i328244/Documents/FacebookSDKs-iOS-4.25.0",
 				);
 				INFOPLIST_FILE = CopterXMaina/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1e970432-0b3c-47cf-81a9-f044fc63500f";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		88C0A88A1AAF12F900F8A233 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F81BDF52C1E1F35E180B710 /* Pods-CopterXMainaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -797,6 +928,7 @@
 		};
 		88C0A88B1AAF12F900F8A233 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BDB53233691E56EBF9E1C58 /* Pods-CopterXMainaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -1,0 +1,23 @@
+PODS:
+  - Bolts (1.8.4):
+    - Bolts/AppLinks (= 1.8.4)
+    - Bolts/Tasks (= 1.8.4)
+  - Bolts/AppLinks (1.8.4):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.8.4)
+  - ChartboostSDK (6.6.3)
+  - Google-Mobile-Ads-SDK (7.22.0)
+
+DEPENDENCIES:
+  - Bolts (~> 1.8)
+  - ChartboostSDK (~> 6.6)
+  - Google-Mobile-Ads-SDK
+
+SPEC CHECKSUMS:
+  Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
+  ChartboostSDK: c0aefb3c25efcd1fa9a43fb45547ea98b323c95c
+  Google-Mobile-Ads-SDK: 1bdf1a4244d0553b1840239874c209c01aef055f
+
+PODFILE CHECKSUM: 2f9679246e58e9377cc9a66992f8b31476b19a9b
+
+COCOAPODS: 1.2.1.beta.1

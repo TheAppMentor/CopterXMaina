@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 #import "PrashWordSmithPurchaseManager.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
-#import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+@import GoogleMobileAds;
 
 @interface AppDelegate ()
 
@@ -80,8 +80,12 @@
     [Chartboost setShouldRequestInterstitialsInFirstSession:NO];
 
     // Set up Parse.
-    [Parse setApplicationId:@"DrUpRQYgj9HsgxSi5m9wH0T9OH0PvXG7pOzK1kKY"
-                  clientKey:@"7cJA8HxW0wsw4mvJXRYNL20m8nds7w6tsNYk17Du"];
+//    [Parse setApplicationId:@"DrUpRQYgj9HsgxSi5m9wH0T9OH0PvXG7pOzK1kKY"
+//                  clientKey:@"7cJA8HxW0wsw4mvJXRYNL20m8nds7w6tsNYk17Du"];
+    
+    // Initialize Google Mobile Ads SDK
+    // Sample AdMob app ID: ca-app-pub-3940256099942544~1458002511
+    [GADMobileAds configureWithApplicationID:@"ca-app-pub-5666511173297473~6643088497"];
         
     // Register for Push Notitications
 //    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
@@ -170,10 +174,10 @@
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     // Store the deviceToken in the current installation and save it to Parse.
-    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation setDeviceTokenFromData:deviceToken];
-    currentInstallation.channels = @[ @"global" ];
-    [currentInstallation saveInBackground];
+//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+//    [currentInstallation setDeviceTokenFromData:deviceToken];
+//    currentInstallation.channels = @[ @"global" ];
+//    [currentInstallation saveInBackground];
 }
 
 - (BOOL)application:(UIApplication *)application

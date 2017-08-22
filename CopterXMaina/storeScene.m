@@ -62,7 +62,7 @@
                 [storeItems addObject:tempDictionary];
             }
             NSLog(@"OK we now have the complete list of prodcuts. Lets load the UI");
-                            //[self populateUIWithProductList];
+                //[self populateUIWithProductList];
 
 
             if (storeItems.count > 0) {

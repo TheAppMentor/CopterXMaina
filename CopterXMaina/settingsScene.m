@@ -94,6 +94,7 @@
     musicLabel.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
    // musicLabel.text = @"Play Game Music";
     musicLabel.text = NSLocalizedString(@"music_on", nil);
+    musicLabel.zPosition = mainBoard.zPosition + 1;
     
     musicLabel.position = CGPointMake(CGRectGetMidX(theContainerNode.frame),CGRectGetMidY(theContainerNode.frame));
     [theContainerNode addChild:musicLabel];
@@ -113,6 +114,7 @@
     soundButton.size = CGSizeMake(50/mainBoard.xScale, 50/mainBoard.yScale);
     soundButton.position = CGPointMake(musicLabel.frame.size.width, 0);
     soundButton.name=@"musicStatusButton";
+    soundButton.zPosition = mainBoard.zPosition + 1;
     
     [theContainerNode addChild:soundButton];
     theContainerNode.anchorPoint = CGPointZero;
@@ -132,7 +134,10 @@
     settingsLabel.fontColor = [UIColor colorWithRed:75/255 green:54.0/255 blue:33.0/255 alpha:1.0];
     settingsLabel.verticalAlignmentMode = SKLabelVerticalAlignmentModeCenter;
     settingsLabel.text = @"Restore Past Purchases";
+    settingsLabel.name = @"restorePurchasesLabel";
     settingsLabel.position = CGPointMake(CGRectGetMidX(restorePurchasesButton.frame),CGRectGetMidY(restorePurchasesButton.frame));
+    settingsLabel.zPosition = restorePurchasesButton.zPosition + 1;
+
     [restorePurchasesButton addChild:settingsLabel];
     
     restorePurchasesButton.anchorPoint = CGPointMake(0.5, 0.5);
@@ -157,9 +162,9 @@
     if ([[self nodeAtPoint:location].name isEqualToString:@"closeButton"]) [self closeStore];
     if ([[self nodeAtPoint:location].name isEqualToString:@"musicStatusButton"]) [self toogleMusicSwitch];
     if ([[self nodeAtPoint:location].name isEqualToString:@"restorePurchasesButton"]) [self restorePastPurchases];
+    if ([[self nodeAtPoint:location].name isEqualToString:@"restorePurchasesLabel"]) [self restorePastPurchases];
     if ([[self nodeAtPoint:location].name isEqualToString:@"showControlsButton"]) [self toggleShowDisplayButton];
 
-    
 }
 
 -(void)toogleMusicSwitch{

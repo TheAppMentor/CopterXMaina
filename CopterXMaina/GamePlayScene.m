@@ -207,10 +207,10 @@ parallaxScrollingBgNode *bgNode;
     // Add the Tap Here Label
     [self addTapHereLabel];
     
-//    // If User has not bought Remove Ads.
-//    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"CopterRemoveAllAds"]) {
-//            [[NSNotificationCenter defaultCenter] postNotificationName:@"startShowingAds" object:nil];
-//    }
+    // If User has not bought Remove Ads.
+    if (![[NSUserDefaults standardUserDefaults] boolForKey:@"CopterRemoveAllAds"]) {
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"startShowingAds" object:nil];
+    }
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -532,7 +532,7 @@ parallaxScrollingBgNode *bgNode;
         gameAlreadyStopped = YES;
         if (![[NSUserDefaults standardUserDefaults] boolForKey:@"CopterRemoveAllAds"]) {
             if (![[NSUserDefaults standardUserDefaults] boolForKey:@"ShowAdsDuringGame"]) {
-                //[[NSNotificationCenter defaultCenter] postNotificationName:@"startShowingAds" object:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"startShowingAds" object:nil];
             }
         }
     }
@@ -561,7 +561,7 @@ parallaxScrollingBgNode *bgNode;
     if (!gameStarted) {
         if (![[NSUserDefaults standardUserDefaults] boolForKey:@"CopterRemoveAllAds"]) {
             if (![[NSUserDefaults standardUserDefaults] boolForKey:@"ShowAdsDuringGame"]) {
-                //[[NSNotificationCenter defaultCenter] postNotificationName:@"startShowingAds" object:nil];
+                [[NSNotificationCenter defaultCenter] postNotificationName:@"startShowingAds" object:nil];
             }
         }
         }
@@ -981,6 +981,7 @@ parallaxScrollingBgNode *bgNode;
     gameOverScreenIntructionsLabel2 = [SKLabelNode labelNodeWithFontNamed:@"HVDComicSerifPro"];
 //    [gameOverScreenIntructionsLabel2 setText:@"(50 Coins)"];
     [gameOverScreenIntructionsLabel2 setText:[NSString stringWithFormat:@"(50 %@)",NSLocalizedString(@"Gold_Coins", nil)]];
+    gameOverScreenIntructionsLabel2.zPosition = mainBoard.zPosition + 1;
     
     [mainBoard addChild:gameOverScreenIntructionsLabel2];
     gameOverScreenIntructionsLabel2.position = CGPointMake(gameOverScreenIntructionsLabel2.position.x, gameOverScreenBuyToContinueButton.position.y + gameOverScreenBuyToContinueButton.size.height/2 + gameOverScreenIntructionsLabel2.frame.size.height/3);
@@ -992,7 +993,7 @@ parallaxScrollingBgNode *bgNode;
 
 //    [gameOverScreenIntructionsLabel1 setText:@"Continue?"];
     [gameOverScreenIntructionsLabel1 setText:NSLocalizedString(@"Continue_Game", nil)];
-    
+    gameOverScreenIntructionsLabel1.zPosition = mainBoard.zPosition + 1;
     
     gameOverScreenIntructionsLabel1.fontSize = [[TexturePreLoader sharedTexturePreLoader] mediumFontSize]/mainBoard.xScale;
     [mainBoard addChild:gameOverScreenIntructionsLabel1];

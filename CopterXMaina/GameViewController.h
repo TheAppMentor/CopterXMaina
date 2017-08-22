@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
 #import <iAd/iAd.h>
-
+@import GoogleMobileAds;
 
 @interface GameViewController : UIViewController <ADBannerViewDelegate>
 
 @property (strong, nonatomic) ADBannerView *bannerView;
+@property (nonatomic, strong) GADBannerView *adMobbannerView;
+
 
 @end

@@ -1,0 +1,1 @@
+/Users/i328244/Desktop/CopterXMaina/DerivedData/CopterXMaina/Build/Intermediates/ArchiveIntermediates/CopterXMaina/InstallationBuildProductsLocation/Applications/CopterXMaina.app

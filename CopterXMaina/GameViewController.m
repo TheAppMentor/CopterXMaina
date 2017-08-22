@@ -15,9 +15,10 @@
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
 #import <FBSDKShareKit/FBSDKShareKit.h>
 
+
 #define SHOW_DEBUG_MESSAGES 1
 
-@interface GameViewController (){
+@interface GameViewController () <GADBannerViewDelegate>{
 
 }
 
@@ -83,7 +84,7 @@
     [super viewDidLoad];
     
     // Register For notification, that determines when ads should be shown.
-    //[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showBannerView) name:@"showAds" object:nil];
+//    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showBannerView) name:@"showAds" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showAuthenticationViewController) name:PresentAuthenticationViewController object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(displayControlsvalueChanged) name:@"dispalyControlsChanged" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(stopShowingAds) name:@"stopShowingAds" object:nil];
@@ -313,17 +314,43 @@
 
 
 -(void)showBannerView{
-    // Setup the Ad Banner
-    NSLog(@"NOTIFICATION >>>>>>>>>>>>>>>> Now I will start showing ads");
+
+    // Google Ads Banner View :
+    
+    self.adMobbannerView = [[GADBannerView alloc]
+                       initWithAdSize:kGADAdSizeSmartBannerLandscape];
     
     // Add the iAD Banner here
-    [self.view addSubview:self.bannerView];
+    [self.view addSubview:self.adMobbannerView];
+    //self.adMobbannerView.backgroundColor = [UIColor redColor];
+    //[_adMobbannerView setHidden:YES];
     
-    [_bannerView setHidden:YES];
+    _adMobbannerView.center = self.view.center;
     
-    _bannerView.center = self.view.center;
-    [_bannerView setFrame:CGRectMake(_bannerView.center.x - (_bannerView.frame.size.width/2.0), self.view.frame.size.height - (_bannerView.frame.size.height), _bannerView.frame.size.width,_bannerView.frame.size.height)];
-    _bannerView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth;
+    
+    [_adMobbannerView setFrame:CGRectMake(_adMobbannerView.center.x - (_adMobbannerView.frame.size.width/2.0), self.view.frame.size.height - (_adMobbannerView.frame.size.height), _adMobbannerView.frame.size.width,_adMobbannerView.frame.size.height)];
+    _adMobbannerView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth;
+
+    
+    self.adMobbannerView.adUnitID = @"ca-app-pub-5666511173297473/6706845287"; //TODO: Uncomment this before launching.
+    //self.adMobbannerView.adUnitID = @"ca-app-pub-3940256099942544/2934735716";  // This is the test ID.
+
+    self.adMobbannerView.rootViewController = self;
+    [self.adMobbannerView loadRequest:[GADRequest request]];
+    self.adMobbannerView.delegate = self;
+    
+    
+//    // Setup the Ad Banner
+//    NSLog(@"NOTIFICATION >>>>>>>>>>>>>>>> Now I will start showing ads");
+//    
+//    // Add the iAD Banner here
+//    [self.view addSubview:self.bannerView];
+//    
+//    [_bannerView setHidden:YES];
+//    
+//    _bannerView.center = self.view.center;
+//    [_bannerView setFrame:CGRectMake(_bannerView.center.x - (_bannerView.frame.size.width/2.0), self.view.frame.size.height - (_bannerView.frame.size.height), _bannerView.frame.size.width,_bannerView.frame.size.height)];
+//    _bannerView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin|UIViewAutoresizingFlexibleWidth;
   
 
 }
@@ -352,6 +379,78 @@
 {
    [self layoutAnimated:[UIView areAnimationsEnabled]];
 }
+
+
+
+
+
+
+// AdMob Ads - Support
+
+/// Tells the delegate an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"adViewDidReceiveAd");
+    [_adMobbannerView setHidden:NO];
+}
+
+/// Tells the delegate an ad request failed.
+- (void)adView:(GADBannerView *)adView
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
+    //[_adMobbannerView setHidden:YES];
+    //[self.adMobbannerView removeFromSuperview];
+}
+
+/// Tells the delegate that a full screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"adViewWillLeaveApplication");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner
 {
